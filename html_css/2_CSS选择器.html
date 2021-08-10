@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--2、 方式二： 内部样式-->
+    <!--3、id选择器-->
+    <!--ul  后代选择器-->
+    <style>
+        #div_1{
+            color:green;
+        }
+        #div_2{
+
+            color:red;
+        }
+        .bg_green{
+            background: yellow;
+        }
+
+        #ul1 li{
+            background: red;
+        }
+    </style>
+    <!--3、 外部样式-->
+    <!--引用css样式-->
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <!--1、内联样式：
+    通过div 的 style 属性 设置 背景颜色-->
+    <div style="background:orange">divide</div>
+    <h1 style="background: red">head1</h1>
+
+    <!--2、 方式二： 内部样式-->
+    <div id="div_2" class="bg_green">
+        divide2
+    </div>
+
+    <!--id选择器-->
+    <div id="div_1" class="bg_green">
+        divide3
+    </div>
+
+
+    <ul id="ul1">
+        <li>运动</li>
+        <li>学习</li>
+        <li>吃饭</li>
+    </ul>
+
+
+
+</body>
+</html>
+<!--
+1、元素选择器
+2、id 选择器 # + 元素的id名
+3、class选择器 可重复使用  . + class名
+4、后代选择器 空格
+5、亲自代选择器 只能选亲儿子 #uli > li{} IE6 不支持
+选择器的优先级：id > class > tag
+-->
